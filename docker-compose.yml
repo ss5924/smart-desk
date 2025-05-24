@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  smart-desk:
+    build: .
+    container_name: smart-desk
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
